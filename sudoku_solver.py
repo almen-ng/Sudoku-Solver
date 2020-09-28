@@ -16,8 +16,6 @@ sudoku_board = [
 # Utility function display sudoku board in terminal
 # Prints a line of - after every 3 rows
 # Prints "| " after every 3 columns
-
-
 def display_sudoku_board(sudoku_board):
     for i in range(len(sudoku_board)):
         if (i % 3 == 0 and i != 0):
@@ -31,8 +29,6 @@ def display_sudoku_board(sudoku_board):
 
 # Find an empty cell in the sudoku board.
 # Return the reference parameters row (i), and column (j)
-
-
 def empty_cell(sudoku_board):
     for i in range(len(sudoku_board)):
         for j in range(len(sudoku_board)):
@@ -41,8 +37,6 @@ def empty_cell(sudoku_board):
     return False
 
 # Checking if a number is valid
-
-
 def is_valid(sudoku_board, number, position):
     # Check each element in the row and see if it matches the given number ignoring if its the position just inserted
     for i in range(len(sudoku_board[0])):
@@ -65,8 +59,6 @@ def is_valid(sudoku_board, number, position):
     return True
 
 # Takes a partially filled sudoku board and tries to assign values to empty cells meeting requirements of sudoku
-
-
 def solve(sudoku_board):
     position = empty_cell(sudoku_board)
 

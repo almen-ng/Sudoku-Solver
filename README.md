@@ -6,7 +6,7 @@ To solve a Sudoku, a logic-based puzzle, a constraint satisfaction problem. The 
 ## Algorithm(s) Used
 Backtracking algorithm was used in this program to solve a given sudoku board. 
 
-## Background Information
+### Background Information
 Backtracking is an algorithm that goes through all, or some, of the solutions to a problem and builds candidates to the solution(s) incrementally. When a candidate is determined not to lead to a valid solution, it is abandoned. When a candidate it abandoned, it results in visiting a previous stage and exploring new possibilities from there. When a solution is found, searching terminates.
 
 ## Constraints 
